@@ -8,4 +8,4 @@ def index(request):
     context = {
         "render_string": "First page"
     }
-    return render(request, template_name="myapp/index.html", context=context)
+    return render(request, template_name="hwdg2/index.html", context=context)
