@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма відгуку</title>
+</head>
+<body>
+    <h2>Форма відгуку</h2>
+    <form action="/submit_review" method="post">
+        <label for="author">Автор:</label><br>
+        <input type="text" id="author" name="author" placeholder="Введіть своє ім'я" required><br><br>
+
+        <label for="review">Текст відгуку:</label><br>
+        <textarea id="review" name="review" rows="4" cols="50" placeholder="Напишіть свій відгук" required></textarea><br><br>
+
+        <label for="rating">Рейтинг:</label><br>
+        <select id="rating" name="rating" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select><br><br>
+
+        <input type="submit" value="Відправити">
+    </form>
+</body>
+</html>
